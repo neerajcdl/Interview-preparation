@@ -1,0 +1,17 @@
+.javascripts-concept p{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.javascripts-concept p span{
+    font-weight: 700;
+}
+p.js-concept {
+    background-color: #192a56;
+    color: #ffffff;
+    margin-top: 8px;
+    padding: 8px 4px;
+    margin-left: 8px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
