@@ -11,7 +11,12 @@ import Dashboard from "../src/screen/Dashboard";
 
 function App() {
   const [data, setData] = useState("");
+
   const JavascriptCallback = (callback) => {
+    setData(callback);
+  };
+
+  const ReactCallback = (callback) => {
     setData(callback);
   };
 
@@ -21,7 +26,7 @@ function App() {
         <div>
           <HeaderComponent />
         </div>
-        <div style={{ display: "flex" }}>
+        <div className="sidebar-container">
           <div className="sidebard">
             <Routes>
               <Route
@@ -30,7 +35,10 @@ function App() {
                   <JavaScriptConcept JavascriptCallback={JavascriptCallback} />
                 }
               />
-              <Route path="/react" element={<ReactConcept />} />
+              <Route
+                path="/react"
+                element={<ReactConcept ReactCallback={ReactCallback} />}
+              />
               <Route path="/redux" element={<ReduxConcept />} />
               <Route path="/js-concept" element={<JavascriptLogical />} />
               <Route

@@ -1,13 +1,12 @@
 import React from "react";
 import "../components/ReactConcept.css";
 
-const ReactConcept = () => {
+const ReactConcept = ({ ReactCallback }) => {
   const reactConceptArray = [
     "What is React",
     "What is node",
     "What is Virtual Dom or Real Dom",
     "Features of React",
-    "Advantages of React",
     "Limitation of React",
     "npm Or Jsx Or npx",
     "Why Can not browser read Jsx",
@@ -41,14 +40,19 @@ const ReactConcept = () => {
     "Forms",
   ];
 
-  const handleClick = (index) =>{
-    console.log("index",index)
-  }
+  const handleClick = (index) => {
+    ReactCallback(index);
+  };
+
   return (
     <div className="react-concept-container">
       {reactConceptArray.map((item, index) => {
         return (
-          <p className="react-concept" key={index} onClick={()=>handleClick(index)}>
+          <p
+            className="react-concept"
+            key={index}
+            onClick={() => handleClick(index + 101)}
+          >
             <span>{index + 1}. </span>
             {item}
           </p>

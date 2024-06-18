@@ -1,7 +1,7 @@
 import React from "react";
 import "../components/JavaScriptConcept.css";
 
-const JavaScriptConcept = ({JavascriptCallback}) => {
+const JavaScriptConcept = ({ JavascriptCallback }) => {
   const jsArray = [
     "Basic Information of JavaScript",
     "Synchronous and Asynchronous",
@@ -19,7 +19,7 @@ const JavaScriptConcept = ({JavascriptCallback}) => {
     "Type Conversion",
     "Operators",
     "Nullish Coalescing Operators",
-    "Swithc Statement",
+    "Switch Statement",
     "Break and Continue",
     "Rest Operator",
     "Spread Operator",
@@ -91,7 +91,7 @@ const JavaScriptConcept = ({JavascriptCallback}) => {
   const handleClick = (index) => {
     // console.log("index", index);
 
-    JavascriptCallback(index)
+    JavascriptCallback(index);
   };
 
   return (
