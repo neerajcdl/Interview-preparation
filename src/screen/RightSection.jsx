@@ -1,5 +1,5 @@
 import React from "react";
-import "../screen/Dashboard.css";
+import "../screen/RightSection.css";
 import BasicInfoJs from "../topics/javascriptTopic/BasicInfoJs";
 import SynchronousAndAsynchronous from "../topics/javascriptTopic/SynchronousAndAsynchronous";
 import Variables from "../topics/javascriptTopic/Variables";
@@ -119,257 +119,258 @@ import KeyReact from "../topics/reactTopic/KeyReact";
 import ReactStates from "../topics/reactTopic/ReactStates";
 import ReactChildProps from "../topics/reactTopic/ReactChildProps";
 
-const Dashboard = ({ data }) => {
+const RightSection = ({ data }) => {
+  console.log("neeraj", data);
   let JavascriptCompRender;
 
-  switch (data) {
-    case 0:
+  switch (data.id) {
+    case 1:
       JavascriptCompRender = <BasicInfoJs />;
       break;
-    case 1:
+    case 2:
       JavascriptCompRender = <SynchronousAndAsynchronous />;
       break;
-    case 2:
+    case 3:
       JavascriptCompRender = <Variables />;
       break;
-    case 3:
+    case 4:
       JavascriptCompRender = <DataTypes />;
       break;
-    case 4:
+    case 5:
       JavascriptCompRender = <DefaultParameter />;
       break;
-    case 5:
+    case 6:
       JavascriptCompRender = <PreventDefault />;
       break;
-    case 6:
+    case 7:
       JavascriptCompRender = <StopPropagation />;
       break;
-    case 7:
+    case 8:
       JavascriptCompRender = <StrictMode />;
       break;
-    case 8:
+    case 9:
       JavascriptCompRender = <NullUndefinedNaN />;
       break;
-    case 9:
+    case 10:
       JavascriptCompRender = <UndeclaredandUndefined />;
       break;
-    case 10:
+    case 11:
       JavascriptCompRender = <Eval />;
       break;
-    case 11:
+    case 12:
       JavascriptCompRender = <NampespacePattern />;
       break;
-    case 12:
+    case 13:
       JavascriptCompRender = <TemplateLiteral />;
       break;
-    case 13:
+    case 14:
       JavascriptCompRender = <TypeConversion />;
       break;
-    case 14:
+    case 15:
       JavascriptCompRender = <Operators />;
       break;
-    case 15:
+    case 16:
       JavascriptCompRender = <NullishCoalescingOperators />;
       break;
-    case 16:
+    case 17:
       JavascriptCompRender = <SwitchStatement />;
       break;
-    case 17:
+    case 18:
       JavascriptCompRender = <BreakAndContinue />;
       break;
-    case 18:
+    case 19:
       JavascriptCompRender = <RestOperator />;
       break;
-    case 19:
+    case 20:
       JavascriptCompRender = <SpreadOperator />;
       break;
-    case 20:
+    case 21:
       JavascriptCompRender = <TernaryOperator />;
       break;
-    case 21:
+    case 22:
       JavascriptCompRender = <AllLoops />;
       break;
-    case 22:
+    case 23:
       JavascriptCompRender = <Condition />;
       break;
-    case 23:
+    case 24:
       JavascriptCompRender = <Modules />;
       break;
-    case 24:
+    case 25:
       JavascriptCompRender = <Clouser />;
       break;
-    case 25:
+    case 26:
       JavascriptCompRender = <Functions />;
       break;
-    case 26:
+    case 27:
       JavascriptCompRender = <FirstClassFunction />;
       break;
-    case 27:
+    case 28:
       JavascriptCompRender = <FirstOrderFuction />;
       break;
-    case 28:
+    case 29:
       JavascriptCompRender = <HigherOrderFunction />;
       break;
-    case 29:
+    case 30:
       JavascriptCompRender = <UnaryFunction />;
       break;
-    case 30:
+    case 31:
       JavascriptCompRender = <CurringFunction />;
       break;
-    case 31:
+    case 32:
       JavascriptCompRender = <PureFunction />;
       break;
-    case 32:
+    case 33:
       JavascriptCompRender = <Memoization />;
       break;
-    case 33:
+    case 34:
       JavascriptCompRender = <ScopeInJs />;
       break;
-    case 34:
+    case 35:
       JavascriptCompRender = <Callback />;
       break;
-    case 35:
+    case 36:
       JavascriptCompRender = <CallbackHell />;
       break;
-    case 36:
+    case 37:
       JavascriptCompRender = <Hoistion />;
       break;
-    case 37:
+    case 38:
       JavascriptCompRender = <MapFilterReduce />;
       break;
-    case 38:
+    case 39:
       JavascriptCompRender = <Iterables />;
       break;
-    case 39:
+    case 40:
       JavascriptCompRender = <SetAndMap />;
       break;
-    case 40:
+    case 41:
       JavascriptCompRender = <WeakMapAndWeakSet />;
       break;
-    case 41:
+    case 42:
       JavascriptCompRender = <Array />;
       break;
-    case 42:
+    case 43:
       JavascriptCompRender = <ArrayDestructuring />;
       break;
-    case 43:
+    case 44:
       JavascriptCompRender = <ArrayMethods />;
       break;
-    case 44:
+    case 45:
       JavascriptCompRender = <Object />;
       break;
-    case 45:
+    case 46:
       JavascriptCompRender = <ObjectDestructuring />;
       break;
-    case 46:
+    case 47:
       JavascriptCompRender = <GlobalObject />;
       break;
-    case 47:
+    case 48:
       JavascriptCompRender = <ObjectkeyValuesEnties />;
       break;
-    case 48:
+    case 49:
       JavascriptCompRender = <ObjectReferenceAndCopy />;
       break;
-    case 49:
+    case 50:
       JavascriptCompRender = <OjectMehtodThis />;
       break;
-    case 50:
+    case 51:
       JavascriptCompRender = <GarbageCollection />;
       break;
-    case 51:
+    case 52:
       JavascriptCompRender = <ConstructorOperatorNew />;
       break;
-    case 52:
+    case 53:
       JavascriptCompRender = <ShallowCopyAndDeepCopy />;
       break;
-    case 53:
+    case 54:
       JavascriptCompRender = <Shadowing />;
       break;
-    case 54:
+    case 55:
       JavascriptCompRender = <String />;
       break;
-    case 55:
+    case 56:
       JavascriptCompRender = <StringMethods />;
       break;
-    case 56:
+    case 57:
       JavascriptCompRender = <NumberMethods />;
       break;
-    case 57:
+    case 58:
       JavascriptCompRender = <MathMethods />;
       break;
-    case 58:
+    case 59:
       JavascriptCompRender = <OptionalChaining />;
       break;
-    case 59:
+    case 60:
       JavascriptCompRender = <SymbolType />;
       break;
-    case 60:
+    case 61:
       JavascriptCompRender = <DateAndTime />;
       break;
-    case 61:
+    case 62:
       JavascriptCompRender = <JSON />;
       break;
-    case 62:
+    case 63:
       JavascriptCompRender = <Promise />;
       break;
-    case 63:
+    case 64:
       JavascriptCompRender = <PromiseChaining />;
       break;
-    case 64:
+    case 65:
       JavascriptCompRender = <ApplyCallBind />;
       break;
-    case 65:
+    case 66:
       JavascriptCompRender = <AsyncAwait />;
       break;
-    case 66:
+    case 67:
       JavascriptCompRender = <TryCatch />;
       break;
-    case 67:
+    case 68:
       JavascriptCompRender = <Fetch />;
       break;
-    case 68:
+    case 69:
       JavascriptCompRender = <FormPropertiesAndMethods />;
       break;
-    case 69:
+    case 70:
       JavascriptCompRender = <FoucsingAndBlur />;
       break;
-    case 70:
+    case 71:
       JavascriptCompRender = <FormEventAndMethods />;
       break;
-    case 71:
+    case 72:
       JavascriptCompRender = <CustomElements />;
       break;
-    case 72:
+    case 73:
       JavascriptCompRender = <Axios />;
       break;
-    case 73:
+    case 74:
       JavascriptCompRender = <EscapeCharacter />;
       break;
-    case 74:
+    case 75:
       JavascriptCompRender = <EventHandling />;
       break;
-    case 75:
+    case 76:
       JavascriptCompRender = <EventDelegation />;
       break;
-    case 76:
+    case 77:
       JavascriptCompRender = <EventBubblingAndEventCapturing />;
       break;
-    case 77:
+    case 78:
       JavascriptCompRender = <SetTimeoutAndSetInerval />;
       break;
-    case 78:
+    case 79:
       JavascriptCompRender = <WebStorage />;
       break;
-    case 79:
+    case 80:
       JavascriptCompRender = <LocalStorage />;
       break;
-    case 80:
+    case 81:
       JavascriptCompRender = <SessionStorage />;
       break;
-    case 81:
+    case 82:
       JavascriptCompRender = <Cookies />;
       break;
-    case 82:
+    case 83:
       JavascriptCompRender = <WebSocket />;
       break;
 
@@ -484,11 +485,11 @@ const Dashboard = ({ data }) => {
   }
 
   return (
-    <div className="dashboard-container">
-      <h3></h3>
+    <div className="RightSection-container">
+      {/* <h3>{data.title}</h3> */}
       <p>{JavascriptCompRender}</p>
     </div>
   );
 };
 
-export default Dashboard;
+export default RightSection;

@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ReduxConcept from "./components/ReduxConcept";
 import JavascriptLogical from "./components/JavascriptLogical";
 import ReactBasedMiniProject from "./components/ReactBasedMiniProject";
-import Dashboard from "../src/screen/Dashboard";
+import RightSection from "./screen/RightSection";
 
 function App() {
   const [data, setData] = useState("");
@@ -23,9 +23,7 @@ function App() {
   return (
     <div>
       <Router>
-        <div>
-          <HeaderComponent />
-        </div>
+        <HeaderComponent />
         <div className="sidebar-container">
           <div className="sidebard">
             <Routes>
@@ -48,7 +46,7 @@ function App() {
             </Routes>
           </div>
           <div className="dashboard">
-            <Dashboard data={data} />
+            <RightSection data={data} />
           </div>
         </div>
       </Router>
