@@ -373,10 +373,6 @@ const Dashboard = ({ data }) => {
       JavascriptCompRender = <WebSocket />;
       break;
 
-    case 82:
-      JavascriptCompRender = <WebSocket />;
-      break;
-
     case 101:
       JavascriptCompRender = <ReactOverview />;
       break;
