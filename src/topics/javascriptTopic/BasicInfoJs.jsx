@@ -3,13 +3,10 @@ import React from "react";
 const BasicInfoJs = () => {
   return (
     <div>
-      <p style={{backgroundColor:"#f1c40f"}}>
-        JavaScript is Scripting Language used to create and control dynamic
-        content for websites.
-      </p>
       <p>
-        JavaScript is a dynamic Programming language that's used for web
-        development, inweb applications, for game development and lots more.
+        JavaScript is Scripting as well as high-level, dynamic, and interpreted programming
+        language that is widely used in web development, app development, game development
+        and lots more.
       </p>
       <p>
         It achieves this by adding new HTML elements while modifying existing
