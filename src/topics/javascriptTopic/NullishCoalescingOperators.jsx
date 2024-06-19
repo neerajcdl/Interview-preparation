@@ -32,7 +32,14 @@ EXAMPLE 2  (use with ?? nullish coalescing operator)
       </h1>
 
       <h2></h2>
-      <pre>{codeSnippet}</pre>
+      <pre
+        style={{
+          whiteSpace: "pre-wrap",
+          wordWrap: "break-word",
+        }}
+      >
+        {codeSnippet}
+      </pre>
 
       <h5>
         notes: nullish coalesing operator ka use hum tab karte hai jab agar kisi
