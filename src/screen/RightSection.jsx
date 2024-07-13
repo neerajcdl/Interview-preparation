@@ -118,11 +118,19 @@ import PropDrillingReact from "../topics/reactTopic/PropDrillingReact";
 import KeyReact from "../topics/reactTopic/KeyReact";
 import ReactStates from "../topics/reactTopic/ReactStates";
 import ReactChildProps from "../topics/reactTopic/ReactChildProps";
+import MinValue from "../topics/JavascriptLogical/MinValue";
+import MaxValue from "../topics/JavascriptLogical/MaxValue";
+import DublicateValue from "../topics/JavascriptLogical/DublicateValue";
+import NoOfDublicate from "../topics/JavascriptLogical/NoOfDublicate";
+import AscendingOrder from "../topics/JavascriptLogical/AscendingOrder";
+import DescendingOrder from "../topics/JavascriptLogical/DescendingOrder";
+import Sorting from "../topics/JavascriptLogical/Sorting";
+import AgeFind from "../topics/JavascriptLogical/AgeFind";
+import InsertElement from "../topics/JavascriptLogical/InsertElement";
+import StudentFail from "../topics/JavascriptLogical/StudentFail";
 
 const RightSection = ({ data }) => {
-  console.log("neeraj", data);
   let JavascriptCompRender;
-
   switch (data.id) {
     case 1:
       JavascriptCompRender = <BasicInfoJs />;
@@ -374,110 +382,141 @@ const RightSection = ({ data }) => {
       JavascriptCompRender = <WebSocket />;
       break;
 
-    case 101:
+    case 501:
       JavascriptCompRender = <ReactOverview />;
       break;
-    case 102:
+    case 502:
       JavascriptCompRender = <NodeOverview />;
       break;
-    case 103:
+    case 503:
       JavascriptCompRender = <VirtualDomRealDom />;
       break;
-    case 104:
+    case 504:
       JavascriptCompRender = <AdvantageOfReact />;
       break;
-    case 105:
+    case 505:
       JavascriptCompRender = <LimitationsReact />;
       break;
-    case 106:
+    case 506:
       JavascriptCompRender = <NpmOrJsxOrNpx />;
       break;
-    case 107:
+    case 507:
       JavascriptCompRender = <BrowserNotReadJsx />;
       break;
-    case 108:
+    case 508:
       JavascriptCompRender = <FunctionalComponent />;
       break;
-    case 109:
+    case 509:
       JavascriptCompRender = <LifeCycleReact />;
       break;
-    case 110:
+    case 510:
       JavascriptCompRender = <AllReactHooks />;
       break;
-    case 111:
+    case 511:
       JavascriptCompRender = <ReactCustomHooks />;
       break;
-    case 112:
+    case 512:
       JavascriptCompRender = <PropsDetail />;
       break;
-    case 113:
+    case 513:
       JavascriptCompRender = <PropDrillingReact />;
       break;
-    case 114:
+    case 514:
       JavascriptCompRender = <ReactChildProps />;
       break;
-    case 115:
+    case 515:
       JavascriptCompRender = <ReactStates />;
       break;
-    case 116:
+    case 516:
       JavascriptCompRender = <AllEvents />;
       break;
-    case 117:
+    case 517:
       JavascriptCompRender = <KeyReact />;
       break;
-    case 118:
+    case 518:
       JavascriptCompRender = <DataPassParentToChild />;
       break;
-    case 119:
+    case 519:
       JavascriptCompRender = <DataPassChildToParent />;
       break;
-    case 120:
+    case 520:
       JavascriptCompRender = <ControlledUncontrolledComponent />;
       break;
-    case 121:
+    case 521:
       JavascriptCompRender = <HigherOrderComponent />;
       break;
-    case 122:
+    case 522:
       JavascriptCompRender = <HigherOrderFunction />;
       break;
-    case 123:
+    case 523:
       JavascriptCompRender = <PureComponent />;
       break;
-    case 124:
+    case 524:
       JavascriptCompRender = <ReactRouterDom />;
       break;
-    case 125:
+    case 525:
       JavascriptCompRender = <ConditionalRendering />;
       break;
-    case 126:
+    case 526:
       JavascriptCompRender = <ApiCall />;
       break;
-    case 127:
+    case 527:
       JavascriptCompRender = <ContextApi />;
       break;
-    case 128:
+    case 528:
       JavascriptCompRender = <UseReducer />;
       break;
-    case 129:
+    case 529:
       JavascriptCompRender = <ReduxToolkit />;
       break;
-    case 130:
+    case 530:
       JavascriptCompRender = <LazyLoading />;
       break;
-    case 131:
+    case 531:
       JavascriptCompRender = <Authentication />;
       break;
-    case 132:
+    case 532:
       JavascriptCompRender = <Authorization />;
       break;
-    case 133:
+    case 533:
       JavascriptCompRender = <TypeOfCssInReact />;
       break;
-    case 134:
+    case 534:
       JavascriptCompRender = <AxiosCall />;
       break;
-    case 135:
+    case 535:
       JavascriptCompRender = <Form />;
+      break;
+
+    case 1001:
+      JavascriptCompRender = <MinValue />;
+      break;
+    case 1002:
+      JavascriptCompRender = <MaxValue />;
+      break;
+    case 1003:
+      JavascriptCompRender = <DublicateValue />;
+      break;
+    case 1004:
+      JavascriptCompRender = <NoOfDublicate />;
+      break;
+    case 1005:
+      JavascriptCompRender = <AscendingOrder />;
+      break;
+    case 1006:
+      JavascriptCompRender = <DescendingOrder />;
+      break;
+    case 1007:
+      JavascriptCompRender = <Sorting />;
+      break;
+    case 1008:
+      JavascriptCompRender = <AgeFind />;
+      break;
+    case 1009:
+      JavascriptCompRender = <InsertElement />;
+      break;
+    case 1010:
+      JavascriptCompRender = <StudentFail />;
       break;
 
     default:
@@ -486,7 +525,6 @@ const RightSection = ({ data }) => {
 
   return (
     <div className="RightSection-container">
-      {/* <h3>{data.title}</h3> */}
       <p>{JavascriptCompRender}</p>
     </div>
   );

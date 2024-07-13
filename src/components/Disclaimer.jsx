@@ -3,7 +3,7 @@ import React from 'react'
 const Disclaimer = () => {
   return (
     <div>
-      disclamer
+        this is bydefault disclamer
     </div>
   )
 }

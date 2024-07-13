@@ -20,6 +20,10 @@ function App() {
     setData(callback);
   };
 
+  const javascriptLogicalCallback = (callback) => {
+    setData(callback);
+  };
+
   return (
     <div>
       <Router>
@@ -38,7 +42,14 @@ function App() {
                 element={<ReactConcept ReactCallback={ReactCallback} />}
               />
               <Route path="/redux" element={<ReduxConcept />} />
-              <Route path="/js-concept" element={<JavascriptLogical />} />
+              <Route
+                path="/js-concept"
+                element={
+                  <JavascriptLogical
+                    javascriptLogicalCallback={javascriptLogicalCallback}
+                  />
+                }
+              />
               <Route
                 path="/react-project"
                 element={<ReactBasedMiniProject />}

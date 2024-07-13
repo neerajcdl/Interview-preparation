@@ -1,0 +1,8 @@
+const obj = {
+    name: "neeraj",
+    age:26,
+    gender:"male"
+}
+
+
+ Object.entries(obj).map(([key, value])=>(console.log(key,value)))

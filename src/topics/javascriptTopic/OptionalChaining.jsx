@@ -73,7 +73,14 @@ console.log(city) // output is undefined
       </h1>
       <h2></h2>
       <h3>
-        <pre>{codeSnippet}</pre>
+        <pre
+          style={{
+            whiteSpace: "pre-wrap",
+            wordWrap: "break-word",
+          }}
+        >
+          {codeSnippet}
+        </pre>
       </h3>
       <h5>
         note: optional chaining ye ek tarh ka operator bol skte hai, uska mainly

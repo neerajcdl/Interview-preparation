@@ -1,0 +1,19 @@
+this is the best example of filter data without using filter method
+ 
+function filterArray(arr, callback) {
+  const result = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (callback(arr[i])) {
+      result.push(arr[i]);
+    }
+  }
+  return result;
+}
+
+const numbers = [1, 2, 3, 4, 5];
+
+const evenNumbers = filterArray(numbers, function(num) {
+  return num % 2 === 0;
+});
+
+console.log(evenNumbers); // Output: [2, 4]

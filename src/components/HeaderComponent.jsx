@@ -25,24 +25,21 @@ export default function HeaderComponent() {
   const handleClick = (route) => {
     if (route === "javascript") {
       navigate("/");
-      setMobileMenuOpen(false)
     } else if (route === "react") {
       navigate("/react");
-      setMobileMenuOpen(false)
-    }else if (route === "redux") {
+    } else if (route === "redux") {
       navigate("/redux");
-      setMobileMenuOpen(false)
-    }else if (route === "js-concept") {
+    } else if (route === "js-concept") {
       navigate("/js-concept");
-      setMobileMenuOpen(false)
-    }else if (route === "react-mini-projects") {
+    } else if (route === "react-mini-projects") {
       navigate("/react-project");
-      setMobileMenuOpen(false)
     }
+    setMobileMenuOpen(false);
   };
+  
 
   return (
-    <header className="bg-black" style={{position:"fixed",width:"100%"}}>
+    <header className="bg-black" style={{ position: "fixed", width: "100%" }}>
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -81,22 +78,25 @@ export default function HeaderComponent() {
             </PopoverButton>
           </Popover>
           <Popover className="relative">
-            <PopoverButton className="text-sm font-semibold leading-6 text-white"
-             onClick={() => handleClick("redux")}
-            >
-              Redux-Toolkit
-            </PopoverButton>
-          </Popover>
-          <Popover className="relative">
-            <PopoverButton className="text-sm font-semibold leading-6 text-white"
-             onClick={() => handleClick("js-concept")}
+            <PopoverButton
+              className="text-sm font-semibold leading-6 text-white"
+              onClick={() => handleClick("js-concept")}
             >
               JavaScript Logical
             </PopoverButton>
           </Popover>
           <Popover className="relative">
-            <PopoverButton className="text-sm font-semibold leading-6 text-white"
-             onClick={() => handleClick("react-mini-projects")}
+            <PopoverButton
+              className="text-sm font-semibold leading-6 text-white"
+              onClick={() => handleClick("redux")}
+            >
+              Data Management
+            </PopoverButton>
+          </Popover>
+          <Popover className="relative">
+            <PopoverButton
+              className="text-sm font-semibold leading-6 text-white"
+              onClick={() => handleClick("react-mini-projects")}
             >
               React based Mini Project
             </PopoverButton>

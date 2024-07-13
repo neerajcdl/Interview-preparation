@@ -1,58 +1,50 @@
 import React from "react";
+import "../components/JavascriptLogical.css";
 
-const JavascriptLogical = () => {
+const JavascriptLogical = ({javascriptLogicalCallback}) => {
+  const jsLogical = [
+    { id: 1001, title: "Find minimum value" },
+    { id: 1002, title: "Find maximum value" },
+    { id: 1003, title: "Remove dublicate value" },
+    { id: 1004, title: "Find how many dublicate value" },
+    { id: 1005, title: "Ascending order" },
+    { id: 1006, title: "Descending order" },
+    { id: 1007, title: "Sorting string" },
+    { id: 1008, title: "Find age GT18" },
+    { id: 1009, title: "Insert element any place in array" },
+    { id: 1010, title: "Find student fail or not inside ArrofObj" },
+    // { id: 11, title: "" },
+    // { id: 12, title: "" },
+    // { id: 13, title: "" },
+    // { id: 14, title: "" },
+    // { id: 15, title: "" },
+    // { id: 16, title: "Nullish Coalescing Operators" },
+    // { id: 17, title: "Switch Statement" },
+    // { id: 18, title: "Break and Continue" },
+    // { id: 19, title: "Rest Operator" },
+    // { id: 20, title: "Spread Operator" },
+    // { id: 21, title: "Ternary Operator" },
+    // { id: 22, title: "Loop" },
+  ];
+
+  const handleClick = (item) => {
+    javascriptLogicalCallback(item);
+  };
+
   return (
-    <div>
-      <h2>JavascriptLogical</h2>
-
-      <p>
-        <span>1.</span> find minimum value in array
-      </p>
-      <p>
-        <span>2.</span> find maximum value in array
-      </p>
-      <p>
-        <span>3.</span> Remove dublicate value in array
-      </p>
-      <p>
-        <span>4.</span> find how many dublicate value in array
-      </p>
-      <p>
-        <span>5.</span> Arranging ascending order of array
-      </p>
-      <p>
-        <span>6.</span> Arranging descending order of array
-      </p>
-      <p>
-        <span>7.</span> sorting string
-      </p>
-      <p>
-        <span>8.</span> find age of greater than 18
-      </p>
-      <p>
-        <span>9.</span> find age of lesser than 18
-      </p>
-      <p>
-        <span>10.</span> insert element any place in array
-      </p>
-      <p>
-        <span>11.</span> 
-      </p>
-      <p>
-        <span>12.</span>
-      </p>
-      <p>
-        <span>13.</span>
-      </p>
-      <p>
-        <span>14.</span>
-      </p>
-      <p>
-        <span>15.</span>
-      </p>
-      <p>
-        <span>16.</span>
-      </p>
+    <div className="javascript-logical">
+      {jsLogical.map((item) => {
+        return (
+          <p
+            className="js-logical"
+            key={item.id}
+            onClick={() => handleClick(item)}
+          >
+            <span>{item.id - 1000}. </span>
+            {item.title}
+          </p>
+        );
+      })}
     </div>
   );
 };
